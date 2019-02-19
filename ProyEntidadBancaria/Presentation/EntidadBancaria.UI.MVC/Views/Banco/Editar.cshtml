@@ -1,0 +1,39 @@
+﻿@model EntidadBancaria.UI.MVC.Models.BancoViewModel
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2>Crear/Editar Banco</h2>
+<div>
+    @using (Html.BeginForm("Guardar","Banco",FormMethod.Post))
+    {
+        @Html.HiddenFor(x => x.Id)
+        <div class="row">
+            <div class="col-md-10">
+                @Html.LabelFor(x => x.Nombre, "NOMBRE", new { Class = "control-label" })
+                @Html.TextBoxFor(x => x.Nombre, new { Class = "form-control input-sm" })
+                @Html.ValidationMessageFor(x=>x.Nombre)
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-10">
+                @Html.LabelFor(x => x.Direccion, "DIRECCION", new { Class = "control-label" })
+                @Html.TextBoxFor(x => x.Direccion, new { Class = "form-control input-sm" })
+                @Html.ValidationMessageFor(x => x.Direccion)
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-10">
+                @Html.LabelFor(x => x.FechaDeRegistro, "FECHA DE REGISTRO", new { Class = "control-label" })
+                @Html.EditorFor(X => X.FechaDeRegistro, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(x => x.FechaDeRegistro)
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-md-3">
+                <input type="submit" value="GRABAR" class="btn btn-danger" />
+            </div>
+        </div>
+    }
+</div>

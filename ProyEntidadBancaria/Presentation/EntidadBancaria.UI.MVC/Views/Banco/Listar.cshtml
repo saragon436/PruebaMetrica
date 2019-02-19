@@ -1,0 +1,37 @@
+﻿@model IEnumerable<EntidadBancaria.UI.MVC.Models.BancoViewModel>
+@{
+    ViewBag.Title = "Listar";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>BANCOS</h2>
+<div>
+    <p>
+        @Html.ActionLink("Nuevo Banco", "Editar")
+    </p>
+    <table class="table">
+        <tr>
+            <th>NOMBRE</th>
+            <th>DIRECCION</th>
+            <th>FECHA DE REGISTRO</th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @item.Nombre
+                </td>
+                <td>
+                    @item.Direccion
+                </td>
+                <td>
+                    @item.FechaDeRegistro
+                </td>
+                <td>
+                    @Html.ActionLink("Editar", "Editar", new { id = item.Id }) |
+                    @Html.ActionLink("Eliminar", "Eliminar", new { id = item.Id })
+                </td>
+            </tr>
+        }
+    </table>
+</div>

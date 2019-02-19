@@ -1,0 +1,53 @@
+﻿@model EntidadBancaria.UI.MVC.Models.OrdenDePagoViewModel
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2>Crear/Editar Orden De Pago</h2>
+<div>
+    @using (Html.BeginForm("Guardar", "OrdenDePago", FormMethod.Post))
+    {
+        @Html.HiddenFor(x => x.Id)
+        <div class="row">
+            <div class="col-md-10">
+                @Html.LabelFor(x => x.Monto, "MONTO", new { Class = "control-label" })
+                @Html.TextBoxFor(x => x.Monto, new { Class = "form-control input-sm" })
+                @Html.ValidationMessageFor(x => x.Monto)
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-10">
+                @Html.LabelFor(x => x.Moneda, "MONEDA", new { Class = "control-label" })
+                @Html.DropDownListFor(x => x.Moneda, ViewBag.Monedas as SelectList, new { Class = "form-control input-sm" })
+                @Html.ValidationMessageFor(x => x.Moneda)
+            </div>
+        </div>
+    <div class="row">
+        <div class="col-md-10">
+            @Html.LabelFor(x => x.Estado, "ESTADOS", new { Class = "control-label" })
+            @Html.DropDownListFor(x => x.Estado, ViewBag.Estados as SelectList, new { Class = "form-control input-sm" })
+            @Html.ValidationMessageFor(x => x.Estado)
+        </div>
+    </div>
+        <div class="row">
+            <div class="col-md-10">
+                @Html.LabelFor(x => x.FechaDePago, "FECHA DE PAGO", new { Class = "control-label" })
+                @Html.EditorFor(X => X.FechaDePago, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(x => x.FechaDePago)
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-10">
+                @Html.LabelFor(x => x.IdSucursal, "SUCURSAL", new { Class = "control-label" })
+                @Html.DropDownListFor(x => x.IdSucursal, ViewBag.Sucursales as SelectList, "--Seleccionar--", new { Class = "form-control input-sm" })
+                @Html.ValidationMessageFor(x => x.IdSucursal)
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-md-3">
+                <input type="submit" value="GRABAR" class="btn btn-danger" />
+            </div>
+        </div>
+    }
+</div>

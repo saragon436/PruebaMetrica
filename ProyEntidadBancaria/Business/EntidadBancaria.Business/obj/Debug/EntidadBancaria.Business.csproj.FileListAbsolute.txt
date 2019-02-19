@@ -1,0 +1,9 @@
+E:\EXAMEN METRICA\PARTE02\ProyEntidadBancaria\Business\EntidadBancaria.Business\bin\Debug\EntidadBancaria.Business.dll
+E:\EXAMEN METRICA\PARTE02\ProyEntidadBancaria\Business\EntidadBancaria.Business\bin\Debug\EntidadBancaria.Business.pdb
+E:\EXAMEN METRICA\PARTE02\ProyEntidadBancaria\Business\EntidadBancaria.Business\obj\Debug\EntidadBancaria.Business.csprojResolveAssemblyReference.cache
+E:\EXAMEN METRICA\PARTE02\ProyEntidadBancaria\Business\EntidadBancaria.Business\obj\Debug\EntidadBancaria.Business.dll
+E:\EXAMEN METRICA\PARTE02\ProyEntidadBancaria\Business\EntidadBancaria.Business\obj\Debug\EntidadBancaria.Business.pdb
+E:\EXAMEN METRICA\PARTE02\ProyEntidadBancaria\Business\EntidadBancaria.Business\bin\Debug\EntidadBancaria.Data.dll
+E:\EXAMEN METRICA\PARTE02\ProyEntidadBancaria\Business\EntidadBancaria.Business\bin\Debug\EntidadBancaria.Entities.dll
+E:\EXAMEN METRICA\PARTE02\ProyEntidadBancaria\Business\EntidadBancaria.Business\bin\Debug\EntidadBancaria.Data.pdb
+E:\EXAMEN METRICA\PARTE02\ProyEntidadBancaria\Business\EntidadBancaria.Business\bin\Debug\EntidadBancaria.Entities.pdb

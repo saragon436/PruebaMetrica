@@ -1,0 +1,62 @@
+﻿@model IEnumerable<EntidadBancaria.UI.MVC.Models.OrdenDePagoViewModel>
+@{
+    ViewBag.Title = "Listar";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>ORDENES DE PAGO</h2>
+<div>
+    <p>
+        @Html.ActionLink("Nueva Orden de Pago", "Editar")
+    </p>
+    <div>
+        @using (Html.BeginForm("Listar", "OrdenDePago", FormMethod.Post))
+        {
+            <div class="row">
+                <div class="col-md-10">
+                    @Html.Label("IdSucursal", "SUCURSAL", new { Class = "control-label" })
+                    @Html.DropDownList("IdSucursal", ViewBag.Sucursales as SelectList, "--Seleccione--", new { Class = "form-control input-sm" })
+                </div>
+            </div>
+            <br />
+            <div class="row">
+                <div class="col-md-3">
+                    <input type="submit" value="Buscar" class="btn btn-danger" />
+                </div>
+            </div>
+        }
+    </div>
+    <table class="table">
+        <tr>
+            <th>MONTO</th>
+            <th>MONEDA</th>
+            <th>ESTADO</th>
+            <th>FECHA DE PAGO</th>
+            <th>SUCURSAL</th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @item.Monto
+                </td>
+                <td>
+                    @item.MonedaDesc
+                </td>
+                <td>
+                    @item.EstadoDesc
+                </td>
+                <td>
+                    @item.FechaDePago
+                </td>
+                <td>
+                    @item.Sucursal
+                </td>
+                <td>
+                    @Html.ActionLink("Editar", "Editar", new { id = item.Id }) |
+                    @Html.ActionLink("Eliminar", "Eliminar", new { id = item.Id })
+                </td>
+            </tr>
+        }
+    </table>
+</div>

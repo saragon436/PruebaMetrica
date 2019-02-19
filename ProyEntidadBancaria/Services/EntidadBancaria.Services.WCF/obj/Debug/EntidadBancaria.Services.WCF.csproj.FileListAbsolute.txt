@@ -1,0 +1,12 @@
+E:\EXAMEN METRICA\PARTE02\ProyEntidadBancaria\Services\EntidadBancaria.Services.WCF\bin\Debug\EntidadBancaria.Services.WCF.dll.config
+E:\EXAMEN METRICA\PARTE02\ProyEntidadBancaria\Services\EntidadBancaria.Services.WCF\bin\Debug\EntidadBancaria.Services.WCF.dll
+E:\EXAMEN METRICA\PARTE02\ProyEntidadBancaria\Services\EntidadBancaria.Services.WCF\bin\Debug\EntidadBancaria.Services.WCF.pdb
+E:\EXAMEN METRICA\PARTE02\ProyEntidadBancaria\Services\EntidadBancaria.Services.WCF\obj\Debug\EntidadBancaria.Services.WCF.csprojResolveAssemblyReference.cache
+E:\EXAMEN METRICA\PARTE02\ProyEntidadBancaria\Services\EntidadBancaria.Services.WCF\obj\Debug\EntidadBancaria.Services.WCF.dll
+E:\EXAMEN METRICA\PARTE02\ProyEntidadBancaria\Services\EntidadBancaria.Services.WCF\obj\Debug\EntidadBancaria.Services.WCF.pdb
+E:\EXAMEN METRICA\PARTE02\ProyEntidadBancaria\Services\EntidadBancaria.Services.WCF\bin\Debug\EntidadBancaria.Business.dll
+E:\EXAMEN METRICA\PARTE02\ProyEntidadBancaria\Services\EntidadBancaria.Services.WCF\bin\Debug\EntidadBancaria.Entities.dll
+E:\EXAMEN METRICA\PARTE02\ProyEntidadBancaria\Services\EntidadBancaria.Services.WCF\bin\Debug\EntidadBancaria.Data.dll
+E:\EXAMEN METRICA\PARTE02\ProyEntidadBancaria\Services\EntidadBancaria.Services.WCF\bin\Debug\EntidadBancaria.Business.pdb
+E:\EXAMEN METRICA\PARTE02\ProyEntidadBancaria\Services\EntidadBancaria.Services.WCF\bin\Debug\EntidadBancaria.Entities.pdb
+E:\EXAMEN METRICA\PARTE02\ProyEntidadBancaria\Services\EntidadBancaria.Services.WCF\bin\Debug\EntidadBancaria.Data.pdb
